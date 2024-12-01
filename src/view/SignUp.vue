@@ -105,6 +105,7 @@ const handleSignup = async () => {
         if (error) {
             console.log(error);
             alert('에러');
+            isLoading.value = false;
         } else {
             isLoading.value = false;
             router.push('/');
